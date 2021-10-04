@@ -82,11 +82,20 @@
 /*    height: 100%;*/
 /*}*/
 
-/*.html{*/
-/*    height: 100%;*/
-/*    cursor: url("../img/mainCursor.svg"), auto;*/
-/*}*/
+.html{
+        background-image: url("../img/3ab.gif");
+        height: 100%;
 
+        /* Center and scale the image nicely */
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+*{
+
+}
 
 /*khong cho phep website truy cap bang dien thoai*/
 /*@media only screen and (max-width: 700px) {*/
@@ -431,5 +440,19 @@ input.cal:hover, input.cal:active {background-color: #fffeed;
     text-align:center;
 }
 
+#tableChick{
+    color: black;
+}
 
+#tableMidtest{
+    color: black;
+}
+.midTestImg{
+    width: 250px;
+    height: 250px;
+}
+.titleMidtest{
+    font-weight: 500;
+    text-align: center;
+}
 

@@ -2,20 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Hirota Izanagi</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/guide.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="answer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/midTestAnswer.js"></script>
+    <script src="script/chickAnswer.js"></script>
 
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Hirota Izanagi</a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#my-nav-bar"
+                aria-controls="my-nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my-nav-bar">
+            <!--HTML các thành phần trình bày trên Navbar-->
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Trang chủ <i class="fas fa-home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Classes <i class="fas fa-book-dead"></i></a>
+                </li>
 
-<span id="countingTime"></span>
-<br>
-<input id="answerInput" type="text" placeholder="your answer?" class="form-control">
-<button onclick="makeAnswer()" class="btn btn-primary">Answer</button>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Hướng dẫn <i class="fas fa-cat"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="mydropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vấn đề cơ bản <i class="fas fa-book-open"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="mydropdown">
+                        <a class="dropdown-item" onclick="midTestAnswer()" href="javascript:void(0)">Mid test ninja</a>
+                        <a class="dropdown-item" onclick="chickAnswer()" href="javascript:void(0)">Thời gian Chick</a>
+                        <a class="dropdown-item" href="#">Mục 3 zyz abc</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <input type="text" style="color: black" class=" form-control" id="answerInput" placeholder="Nhập câu hỏi của bạn: ">
+                </li>
+                <li class="nav-item">
+                    <button class=" btn btn-danger" onclick="makeAnswer()" style="color: white">Hỏi NPC <i class="fas fa-robot"></i></button>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+<!--<p>Time in system: <span id="countingTime"></span></p>-->
+
 
 <!--SHOW GUIDE HERE-->
 <div id="showGuide">
@@ -27,10 +73,23 @@
         <div class="glitch__img"></div>
     </div>
 
-    <span id="guideMsgIndex">Chao mung</span>
+    <span id="guideMsgIndex">Chào mừng bạn đã đến với chuyên mục hỏi đáp về izanagi, bạn có thể chọn nhanh các hạng mục cần tìm hiểu, <br> hoặc viết câu hỏi để có thể truy cập nhanh các câu hỏi nhé! Xin chúc bạn một ngày tốt lành!</span>
 </div>
 <!--END OF SHOW GUIDE-->
 
+<!--SHOW INFORMATION HERE-->
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-10" id="information">
+
+        </div>
+    </div>
+</div>
+
+<!--END OF SHOW INFORMATION HERE-->
 <script src="script/guideMsg.js"></script>
 <script src="script/tipping.js"></script>
 </body>

@@ -1,7 +1,6 @@
-let input = '';
-let answer = 'Hello';
+
 const date = new Date();
-let introductionAnswer = ['Chào mừng'];
+let introductionAnswer = ['Chào mừng đến với góc hỏi đáp Hirota AI'];
 
 // setTimeout(function (){
 //     // document.write(date.getDate() + "/" + (date.getMonth() + 1) +  "/" + date.getFullYear() );
@@ -9,37 +8,47 @@ let introductionAnswer = ['Chào mừng'];
 // },1000);
 
 let startingChatTime = 1;
-function run(){
-   setInterval(function(){
-         startingChatTime++;
-         $('#countingTime').text(startingChatTime);
-    },1000);
+
+function run() {
+    setInterval(function () {
+        startingChatTime++;
+        $('#countingTime').text(startingChatTime);
+    }, 1000);
 }
 run();
-
-function makeAnswer(){
+let randGuide2 = Math.floor(Math.random() * 2);
+let unknownMsg = ['Không thể hiểu.. vui lòng nói lại.','Có thể vấn đề bạn nói nằm ngoài game Izanagi, hãy nói lại.'];
+// start function answer
+function makeAnswer() {
     let answer = document.getElementById('answerInput').value;
-
-    const subAnswer =
         //question about chick
-        answer.includes('chick') || answer.includes('red chick') || answer.includes('chick do') || answer.includes('bay mau')
-        answer.includes('gà') || answer.includes('gà vàng') || answer.includes('thời gian') || answer.includes('thoi gian') ||
-        answer.includes('ga') || answer.includes('ga vang') || answer.includes('khi nao') || answer.includes('khi nào') ||
-        answer.includes('hunt chick') || answer.includes('chick time') || answer.includes('location') || answer.includes('có ở chỗ nào') ||
-        answer.includes('spawm') || answer.includes('chick drop') || answer.includes('chick color') || answer.includes('color') ||
-        answer.includes('chick') || answer.includes('time') || answer.includes('color chick') || answer.includes('color') ||
-        answer.includes('gold coin bag') || answer.includes('gold') || answer.includes('keys') || answer.includes('key') ||
-        answer.includes('kiem gold') || answer.includes('color') || answer.includes('scandium') || answer.includes('cuong hoa');
-
+    if ( answer.includes('chick') || answer.includes('ga') || answer.includes('gà') || answer.includes('kiem gold')) {
+        $('#guideMsgIndex').html("Ý của bạn là những vấn đề liên quan đến hunt chick hoặc nguyên liệu của chick?<div><button id='chickQuestionConfirm' onclick='chickAnswer()' class='btn btn-success'>Đúng vậy?</button><button onclick='refuseAnyAnswer()' class='btn btn-danger'>Không phải vậy.</button></div>");
+    }
     // end of question about chick
-        if (subAnswer){
-            $('#guideMsgIndex').html("Ý của bạn là những vấn đề liên quan đến hunt chick hoặc nguyên liệu của chick?<div><button class='btn btn-success'>Đúng vậy?</button><button class='btn btn-danger'>Không phải vậy.</button></div>");
-        }
-        else {
-            $('#guideMsgIndex').text('Không hiểu....');
-        }
+
+    //question about monster
+    else if (answer.includes('monster') || answer.includes('quái') || answer.includes('quai') || answer.includes('mobs') || answer.includes('mob')){
+        $('#guideMsgIndex').html("Ý của bạn là những vấn đề liên quan đến các loại quái và boss?<div><button id='monsterQuestionConfirm' onclick='monsterAnswer()' class='btn btn-success'>Đúng vậy?</button><button onclick='refuseAnyAnswer()' class='btn btn-danger'>Không phải vậy.</button></div>");
+    }
+    //end of question about monster
+
+    else if (answer.includes('test') || answer.includes('mid') || answer.includes('second class') || answer.includes('tron tim') || answer.includes('hide and seek')){
+        $('#guideMsgIndex').html("Ý của bạn là những vấn đề liên quan đến nhiệm vụ chuyển class Mid test?<div><button id='midtestQuestionConfirm' onclick='midTestAnswer()' class='btn btn-success'>Đúng vậy?</button><button onclick='refuseAnyAnswer()' class='btn btn-danger'>Không phải vậy.</button></div>");
+    }
+    else {
+        $('#guideMsgIndex').text(unknownMsg[randGuide2]);
+    }
 
 }
+
+function refuseAnyAnswer(){
+        $('#guideMsgIndex').text('Ok, vậy hãy nói lại ý của bạn!');
+}
+function monsterAnswer(){
+    $('#guideMsgIndex').text('Không thể liệt kê được tổng số lượng quái hiện có trong game, vì đó là số lượng quá nhiều, mà AI vô dụng này không biết hết!');
+}
+
 
 
 
