@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/guide.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="answer.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -13,11 +14,8 @@
 
 <span id="countingTime"></span>
 <br>
-<input id="answerInput" type="text" placeholder="your answer?">
-<button onclick="makeAnswer()">Answer</button>
-<br>
-<span id="result">See it?</span>
-
+<input id="answerInput" type="text" placeholder="your answer?" class="form-control">
+<button onclick="makeAnswer()" class="btn btn-primary">Answer</button>
 
 <!--SHOW GUIDE HERE-->
 <div id="showGuide">
