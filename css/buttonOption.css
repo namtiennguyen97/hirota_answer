@@ -1,0 +1,73 @@
+
+.menuDataSS{
+    text-decoration: none;
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    height:60px;
+    width: 60px;
+    transform:rotate(-45deg);
+}
+.menuDataSS i {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transform:rotate(45deg) translate(3px,0);
+    text-align:center;
+}
+.menuDataSS:hover{
+    background-color: #ababab;
+}
+
+
+.dataMenuSound{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 218px;
+    right: 28px;
+    height:60px;
+    width: 60px;
+    transform:rotate(-45deg);
+}
+.dataMenuSound i {
+    transform:rotate(45deg) translate(0,0);
+    text-align:center;
+}
+.dataMenuSound:hover{
+    color: white;
+    background-color: #bbbbbb;
+}
+
+
+#dataMenuHome{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 120px;
+    right: 28px;
+    height:60px;
+    width: 60px;
+    transform:rotate(-45deg);
+}
+#dataMenuHome i {
+    transform:rotate(45deg) translate(0,0);
+    text-align:center;
+}
+#dataMenuHome:hover{
+    background-color: #bbbbbb;
+}

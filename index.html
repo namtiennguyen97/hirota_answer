@@ -5,22 +5,33 @@
     <title>Hirota Izanagi</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="css/buttonOption.css">
+    <link rel="icon" href="img/2b_Best_Vector_Croped.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="answer.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/midTestAnswer.js"></script>
     <script src="script/chickAnswer.js"></script>
     <script src="script/avatarDropAnswer.js"></script>
     <script src="script/tipping.js"></script>
     <script src="script/classesAnswer.js"></script>
+    <script src="script/sounds.js"></script>
+    <script src="script/allAvatarAnswer.js"></script>
+    <script src="script/allAvatarAnswer2.js"></script>
 
 </head>
 <body>
+<audio id="mainMenuSound" autoplay loop>
+    <source src="sound/cityRuinNier.mp3" type="audio/mp3">
+    <source src="sound/cityRuinNier.mp3" type="audio/mpeg">
+</audio>
 <!-- Page Preloder -->
 <script>
     $(window).on('load', function() {
@@ -29,12 +40,13 @@
         --------------------*/
         $(".loader").fadeOut();
         $("#preloder").delay(400).fadeOut("slow");
-
     });
 </script>
 <div id="preloder">
     <div class="loader"></div>
 </div>
+<!--END OF PAGE LOADER-->
+
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img class="navbar-brand" src="img/icon.jpg" style="width: 30px; height: 40px"> <a class="navbar-brand" href="index.html">Hirota Izanagi</a>
@@ -63,7 +75,7 @@
                     <div class="dropdown-menu" aria-labelledby="mydropdown">
                         <a class="dropdown-item" id="midtestNinja" onclick="midTestAnswer()" href="javascript:void(0)">Mid test ninja <i class="fas fa-diagnoses"></i></a>
                         <a class="dropdown-item" id="chickTime" onclick="chickAnswer()" href="javascript:void(0)">Thời gian Chick <i class="fas fa-drumstick-bite"></i></a>
-                        <a class="dropdown-item" id="showAllAvatar" href="#">Avatar <i class="fas fa-vest-patches"></i></a>
+                        <a class="dropdown-item" id="showAllAvatar" onclick="allAvatarAnswer()" href="javascript:void(0)">Avatar <i class="fas fa-vest-patches"></i></a>
                         <a class="dropdown-item" id="avatarBossDrop" onclick="avatarDropAnswer()" href="javascript:void(0)">Loại Avatar Boss drop <i class="fas fa-tshirt"></i></a>
                         <a class="dropdown-item" id="" href="#">Chi tiết các Boss drop <i class="fab fa-grunt"></i></a>
                     </div>
@@ -109,7 +121,16 @@
 </div>
 
 <!--END OF SHOW INFORMATION HERE-->
+<div id="sss">
+    <a href="javascript:" id="dataMenuSound" class="dataMenuSound"><i class="fas fa-volume-up"></i></a>
+</div>
+<a href="javascript:void(0)" onclick="topFunction()" id="dataMenuHome"><i class="fas fa-home"></i></a>
+<div id="ss">
+    <a href="javascript:" id="dataMenu" class="menuDataSS"><i class="fas fa-angle-double-up "></i></a>
+</div>
+
 <script src="script/guideMsg.js"></script>
 <script src="script/tipping.js"></script>
+<script src="script/buttonOption.js"></script>
 </body>
 </html>

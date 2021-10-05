@@ -1,7 +1,7 @@
 function classesAnswer(){
     let htmlAnswer = "<p class='titleMidtest'>Danh sách các class cơ bản của Izanagi</p><br><div class='row row-cols-1 row-cols-md-2 g-4'>" +
         "  <div class='col'>" +
-        "    <div class='classesCard'>" +
+        "    <div class='classesCard border-info'>" +
         "      <img src='img/classes/assasin.jpg'  class='card-img-top img img-thumbnail' alt='...'>" +
         "      <div class='card-body text-primary'>" +
         "        <h5 class='card-title'>Assasin</h5>" +
@@ -14,7 +14,7 @@ function classesAnswer(){
         "    </div>" +
         "  </div>" +
         "  <div class='col'>" +
-        "    <div class='classesCard'>" +
+        "    <div class='classesCard border-danger'>" +
         "      <img src='img/classes/mage.jpg' class='card-img-top' alt='...'>" +
         "      <div class='card-body text-danger'>" +
         "        <h5 class='card-title'>Mage</h5>" +
@@ -28,7 +28,7 @@ function classesAnswer(){
         "    </div>" +
         "  </div>" +
         "  <div class='col'>" +
-        "    <div class='classesCard'>" +
+        "    <div class='classesCard border-success'>" +
         "      <img src='img/classes/cleric.jpg' class='card-img-top' alt='...'>" +
         "      <div class='card-body text-success'>" +
         "        <h5 class='card-title'>Cleric</h5>" +
@@ -42,7 +42,7 @@ function classesAnswer(){
         "    </div>" +
         "  </div>" +
         "  <div class='col'>" +
-        "    <div class='classesCard'>" +
+        "    <div class='classesCard border-info'>" +
         "      <img src='img/classes/warrior.jpg' class='card-img-top' alt='...'>" +
         "      <div class='card-body text-info'>" +
         "        <h5 class='card-title'>Warrior</h5>" +

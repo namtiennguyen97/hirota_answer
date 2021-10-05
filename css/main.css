@@ -530,3 +530,30 @@ input.cal:hover, input.cal:active {background-color: #fffeed;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
 }
+
+.listAvatarItem{
+    /* position: relative; */
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.listAvatarItem-action{
+    width: 100%;
+    color: #495057;
+    text-align: inherit;
+}
+.listAvatarItem:last-child{
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.listAvatarItem:hover{
+    color: #055160;
+    background-color: #18b6d7;
+}
+.listAvatarItem:active{
+    color: #faf7f7;
+    background-color: #0753b4;
+}
