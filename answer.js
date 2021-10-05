@@ -1,4 +1,5 @@
 
+
 const date = new Date();
 let introductionAnswer = ['Chào mừng đến với góc hỏi đáp Hirota AI'];
 
@@ -35,6 +36,9 @@ function makeAnswer() {
 
     else if (answer.includes('test') || answer.includes('mid') || answer.includes('second class') || answer.includes('tron tim') || answer.includes('hide and seek')){
         $('#guideMsgIndex').html("Ý của bạn là những vấn đề liên quan đến nhiệm vụ chuyển class Mid test?<div><button id='midtestQuestionConfirm' onclick='midTestAnswer()' class='btn btn-success'>Đúng vậy?</button><button onclick='refuseAnyAnswer()' class='btn btn-danger'>Không phải vậy.</button></div>");
+    }
+    else if (answer.includes('avatar') || answer.includes('ava') || answer.includes('yukata') || answer.includes('vest') || answer.includes('kabuki')){
+        $('#guideMsgIndex').html("Ý của bạn là những vấn đề liên quan đến các loại ava, vậy nếu đúng thì ý của bạn là cái nào sau đây?<div><button  onclick='avatarDropAnswer()' class='btn btn-success'>Xem các loại boss drop avatar gì?</button><button  onclick='avatarDropAnswer()' class='btn btn-warning'>Xem các loại Avatar có trong game?</button><button onclick='refuseAnyAnswer()' class='btn btn-danger'>Không phải vậy.</button></div>");
     }
     else {
         $('#guideMsgIndex').text(unknownMsg[randGuide2]);

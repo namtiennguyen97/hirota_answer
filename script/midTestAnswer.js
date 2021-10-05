@@ -3,12 +3,12 @@ function midTestAnswer(){
     let htmlMidtest = "<p class='titleMidtest'>Part 1: Hide and Seek (Trốn tìm)</p><br><table class='table table-bordered table-striped table-hover'>" +
         "<tr><th scope='col' class='text-center'>Ghi chú <i class=\"fas fa-clipboard\"></i></th><th scope='col' class='text-center'>Địa điểm <i class=\"fas fa-search-location\"></i></th><th scope='col' class='text-center'>Image <i class=\"fas fa-images\"></i></th>" +
         "</tr>" +
-        "<tr><td scope='row'>Ở ngay map khởi đầu lv1, nơi mà bạn vừa học thành công thuật wall walk. (Vách đá mà chỉ có 2 chú sói)</td><td>Old Wood Forest</td><td><img src='img/600px-Hide_and_Seek_NDL.jpeg' class='img img-thumbnail midTestImg'></td>" +
-        "<tr><td scope='row'>Đằng sau 1 toa tàu (Nơi có boss map là một chú thằn lằn xanh)</td><td>Big Limestone Cave</td><td><img src='img/600px-Hide_and_Seek_BLC.jpeg' class='img img-thumbnail midTestImg'></td>" +
-        "<tr><td scope='row'>Ở ngay trên đỉnh một chỏm đá, hãy ngước lên nhìn (NPC đứng ở một vị trí rất cao, hãy tmf cách nhảy lên các mỏm đá)</td><td>North Defense Line</td><td><img src='img/600px-Hide_and_Seek_NDL.jpeg' class='img img-thumbnail midTestImg'></td>" +
-        "<tr><td scope='row'>Trong một vùng sân nhỏ (Bên trái tàu điện ngầm nơi vào boss Rat)</td><td>Mystic Ruined City</td><td><img src='img/600px-Hide_and_Seek_MRC.jpeg' class='img img-thumbnail midTestImg'></td>" +
-        "<tr><td scope='row'>Trên một vách núi nhỏ (Chỉ cần mở map và nhìn chấm trắng và tới)</td><td>Large Wetland</td><td><img src='img/600px-Hide_and_Seek_LW.jpeg' class='img img-thumbnail midTestImg'></td>"+
-        "<tr><td scope='row'>Hãy nhảy từ trên cầu xuống và hạ cánh ở một cây cầu nhỏ, nó sẽ dẫn bạn đến một cái hang nhỏ bò hoang.</td><td>North Fortress Path</td><td><img src='img/600px-Hide_and_Seek_NFP.jpeg' class='img img-thumbnail midTestImg'></td>"+
+        "<tr><td scope='row'>Ở ngay map khởi đầu lv1, nơi mà bạn vừa học thành công thuật wall walk. (Vách đá mà chỉ có 2 chú sói)</td><td>Old Wood Forest</td><td><img src='img/midtest/600px-Hide_and_Seek_NDL.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Đằng sau 1 toa tàu (Nơi có boss map là một chú thằn lằn xanh)</td><td>Big Limestone Cave</td><td><img src='img/midtest/600px-Hide_and_Seek_BLC.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Ở ngay trên đỉnh một chỏm đá, hãy ngước lên nhìn (NPC đứng ở một vị trí rất cao, hãy tmf cách nhảy lên các mỏm đá)</td><td>North Defense Line</td><td><img src='img/midtest/600px-Hide_and_Seek_NDL.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Trong một vùng sân nhỏ (Bên trái tàu điện ngầm nơi vào boss Rat)</td><td>Mystic Ruined City</td><td><img src='img/midtest/600px-Hide_and_Seek_MRC.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Trên một vách núi nhỏ (Chỉ cần mở map và nhìn chấm trắng và tới)</td><td>Large Wetland</td><td><img src='img/midtest/600px-Hide_and_Seek_LW.jpeg' class='img img-thumbnail midTestImg'></td>"+
+        "<tr><td scope='row'>Hãy nhảy từ trên cầu xuống và hạ cánh ở một cây cầu nhỏ, nó sẽ dẫn bạn đến một cái hang nhỏ bò hoang.</td><td>North Fortress Path</td><td><img src='img/midtest/midtest/600px-Hide_and_Seek_NFP.jpeg' class='img img-thumbnail midTestImg'></td>"+
         "</tr>" +
         "</table>" + "<br>"
         +"<p class='titleMidtest'>"+  'Part 2: Monster Killing (Giết quái farm nguyên liệu yêu cầu)' + "</p>" + "<br>"
@@ -21,18 +21,18 @@ function midTestAnswer(){
         "<p class='titleMidtest'>"+  'Part 3 - Extracting and Crafting (Thu thập và craft đồ theo yêu cầu)' + "</p>" + "<br>"
         +"<span>Bạn sẽ được yêu cầu gặp MB tại Blacksmith's Village và anh ta sẽ yêu cầu một số nguyên liệu từ bạn</span>"
         +"<table class='table table-bordered table-striped table-hover'><tr><th scope='col' class='text-center'>Item yêu cầu <i class=\"fas fa-images\"></i></th><th scope='col' class='text-center'>Số lượng cần <i class=\"fas fa-sort-amount-up\"></i></th><th class='text-center' scope='col'>Địa điểm <i class=\"fas fa-search-location\"></i></th><th scope='col' class='text-center' >Ghi chú <i class=\"fas fa-clipboard\"></i></th></tr>" +
-        "<tr><td scope='row'><img src='img/Deity_Gem_Mineral.jpeg'></td><td>10</td><td>Perished Smithy</td><td>Tất cả những chỗ extract có chữ ETC</td></tr>"+
-        "<tr><td scope='row'><img src='img/Raw_Deity_Gem.jpeg'></td><td>8</td><td>Large Wetland</td><td>Tất cả những chỗ extract có chữ ETC</td></tr>"+
-        "<tr><td scope='row'><img src='img/Stone_Chisel.jpeg'></td><td>8</td><td>Blacksmith's Village</td><td>Tất cả những chỗ extract có chữ ETC</td></tr>"+
+        "<tr><td scope='row'><img src='img/midtest/Deity_Gem_Mineral.jpeg'></td><td>10</td><td>Perished Smithy</td><td>Tất cả những chỗ extract có chữ ETC</td></tr>"+
+        "<tr><td scope='row'><img src='img/midtest/Raw_Deity_Gem.jpeg'></td><td>8</td><td>Large Wetland</td><td>Tất cả những chỗ extract có chữ ETC</td></tr>"+
+        "<tr><td scope='row'><img src='img/midtest/Stone_Chisel.jpeg'></td><td>8</td><td>Blacksmith's Village</td><td>Tất cả những chỗ extract có chữ ETC</td></tr>"+
         "</table>"
         +"<p class='titleMidtest'>"+  'Part 4: Final test (Kết hợp giữa Trốn tìm, Killing monster, craft và thu lượm)' + "</p>" + "<br>"
         +"<span><b>1.HIDE AND SEEK</b></span>"+"<br>"
         +"<table class='table table-bordered table-striped table-hover'>" +
         "<tr><th scope='col' class='text-center'>Ghi chú <i class=\"fas fa-clipboard\"></i></th><th scope='col' class='text-center'>Địa điểm <i class=\"fas fa-search-location\"></i></th><th scope='col' class='text-center'>Image <i class=\"fas fa-images\"></i></th>" +
         "</tr>" +
-        "<tr><td scope='row'>Ở góc map. Hãy mở map lên và để ý chấm trắng npc</td><td>Kasuba Water Plant 3</td><td><img src='img/600px-Hide_and_Seek_KWP3.jpeg' class='img img-thumbnail midTestImg'></td>" +
-        "<tr><td scope='row'>Nơi gần boss map King Golem</td><td>Valley of the Wind</td><td><img src='img/600px-Hide_and_Seek_VotW.jpeg' class='img img-thumbnail midTestImg'></td>" +
-        "<tr><td scope='row'>Ở dưới cầu, NPC đứng cạnh MAX</td><td>Ancient Ruins</td><td><img src='img/600px-Hide_and_Seek_AR.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Ở góc map. Hãy mở map lên và để ý chấm trắng npc</td><td>Kasuba Water Plant 3</td><td><img src='img/midtest/600px-Hide_and_Seek_KWP3.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Nơi gần boss map King Golem</td><td>Valley of the Wind</td><td><img src='img/midtest/600px-Hide_and_Seek_VotW.jpeg' class='img img-thumbnail midTestImg'></td>" +
+        "<tr><td scope='row'>Ở dưới cầu, NPC đứng cạnh MAX</td><td>Ancient Ruins</td><td><img src='img/midtest/600px-Hide_and_Seek_AR.jpeg' class='img img-thumbnail midTestImg'></td>" +
         "</tr>" +
         "</table>" + "<br>"
         +"<span><b>2.Killing monster</b></span>"+ "<br>"+
@@ -47,7 +47,7 @@ function midTestAnswer(){
         "<tr>" +
         "<td scope='row' rowspan='3'>Warrior</td>"+
         "<td>Arrogant Soldier Skeleton</td><td>Cave Hinarigaoka</td>"+
-        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/Chip_Slash_Mineral.jpeg'></td>"+
+        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/midtest/Chip_Slash_Mineral.jpeg'></td>"+
         "</tr>"+
 
         "<tr>" +
@@ -60,7 +60,7 @@ function midTestAnswer(){
         "<tr>" +
         "<td scope='row' rowspan='3'>Assassin</td>"+
         "<td>Quiet Demon Human Troop</td><td>North Defense Line</td>"+
-        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/Chip_Slash_Mineral.jpeg'></td>"+
+        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/midtest/Chip_Slash_Mineral.jpeg'></td>"+
         "</tr>"+
 
         "<tr>" +
@@ -73,7 +73,7 @@ function midTestAnswer(){
         "<tr>" +
         "<td scope='row' rowspan='3'>Mage</td>"+
         "<td>Bandwagon Goblin</td><td>Perished Smithy</td>"+
-        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/Chip_Slash_Mineral.jpeg'></td>"+
+        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/midtest/Chip_Slash_Mineral.jpeg'></td>"+
         "</tr>"+
 
         "<tr>" +
@@ -86,7 +86,7 @@ function midTestAnswer(){
         "<tr>" +
         "<td scope='row' rowspan='3'>Cleric</td>"+
         "<td>Jitter Manis</td><td>Cave Hinarigaoka</td>"+
-        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/Chip_Slash_Mineral.jpeg'></td>"+
+        "<td scope='row' rowspan='3' align='center'><img class='img img-thumbnail' src='img/midtest/Chip_Slash_Mineral.jpeg'></td>"+
         "</tr>"+
 
         "<tr>" +
