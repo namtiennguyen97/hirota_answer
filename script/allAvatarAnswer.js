@@ -35,7 +35,51 @@ function allAvatarAnswer(){
         "    <a href='javascript:void(0)' onclick='showBerserker()' class='listAvatarItem listAvatarItem-action list-group-item-info'>29. Berserker</a>" +
         "    <a href='javascript:void(0)' onclick='showHound()' class='listAvatarItem listAvatarItem-action list-group-item-info'>29. Hound</a>" +
         "    <a href='javascript:void(0)' onclick='showBakeneko()' class='listAvatarItem listAvatarItem-action list-group-item-info'>30. Bakeneko</a>" +
-
+        "    <a href='javascript:void(0)' onclick='showBaphomet()' class='listAvatarItem listAvatarItem-action list-group-item-info'>31. Baphomet</a>" +
+        "    <a href='javascript:void(0)' onclick='showWestern2()' class='listAvatarItem listAvatarItem-action list-group-item-info'>32. Western</a>" +
+        "    <a href='javascript:void(0)' onclick='showWedding()' class='listAvatarItem listAvatarItem-action list-group-item-info'>33. Wedding</a>" +
+        "    <a href='javascript:void(0)' onclick='showSchool()' class='listAvatarItem listAvatarItem-action list-group-item-info'>34. School Uniform</a>" +
+        "    <a href='javascript:void(0)' onclick='showKarajishi()' class='listAvatarItem listAvatarItem-action list-group-item-info'>35. Karajishi</a>" +
+        "    <a href='javascript:void(0)' onclick='showKarasuTengu()' class='listAvatarItem listAvatarItem-action list-group-item-info'>36. Karasu Tengu</a>" +
+        "    <a href='javascript:void(0)' onclick='showMascot()' class='listAvatarItem listAvatarItem-action list-group-item-info'>37. Mascot</a>" +
+        "    <a href='javascript:void(0)' onclick='showClown()' class='listAvatarItem listAvatarItem-action list-group-item-info'>38. Clown</a>" +
+        "    <a href='javascript:void(0)' onclick='showGhostWarrior()' class='listAvatarItem listAvatarItem-action list-group-item-info'>39. Ghost Warrior</a>" +
+        "    <a href='javascript:void(0)' onclick='showCarnival()' class='listAvatarItem listAvatarItem-action list-group-item-info'>40. Carnival</a>" +
+        "    <a href='javascript:void(0)' onclick='showVillan()' class='listAvatarItem listAvatarItem-action list-group-item-info'>41. Villan</a>" +
+        "    <a href='javascript:void(0)' onclick='showGojoOhashi()' class='listAvatarItem listAvatarItem-action list-group-item-info'>42. Gojo Ohashi</a>" +
+        "    <a href='javascript:void(0)' onclick='showFolklore()' class='listAvatarItem listAvatarItem-action list-group-item-info'>43. Folklore</a>" +
+        "    <a href='javascript:void(0)' onclick='showFolklore2()' class='listAvatarItem listAvatarItem-action list-group-item-info'>44. Folklore II</a>" +
+        "    <a href='javascript:void(0)' onclick='showMerman()' class='listAvatarItem listAvatarItem-action list-group-item-info'>45. Merman</a>" +
+        "    <a href='javascript:void(0)' onclick='showHeroAva()' class='listAvatarItem listAvatarItem-action list-group-item-info'>46. Hero</a>" +
+        "    <a href='javascript:void(0)' onclick='showFujinRaijin()' class='listAvatarItem listAvatarItem-action list-group-item-info'>47. FujinRaijin</a>" +
+        "    <a href='javascript:void(0)' onclick='showFumaNinja()' class='listAvatarItem listAvatarItem-action list-group-item-info'>48. Fuma Ninja</a>" +
+        "    <a href='javascript:void(0)' onclick='showWrestling()' class='listAvatarItem listAvatarItem-action list-group-item-info'>49. Wrestling</a>" +
+        "    <a href='javascript:void(0)' onclick='showSamuraiGEN()' class='listAvatarItem listAvatarItem-action list-group-item-info'>50. Samurai GEN</a>" +
+        "    <a href='javascript:void(0)' onclick='showMagical()' class='listAvatarItem listAvatarItem-action list-group-item-info'>51. Magical</a>" +
+        "    <a href='javascript:void(0)' onclick='showMariachi()' class='listAvatarItem listAvatarItem-action list-group-item-info'>52. Mariachi</a>" +
+        "    <a href='javascript:void(0)' onclick='showSwimsuit()' class='listAvatarItem listAvatarItem-action list-group-item-info'>53. Swimsuit</a>" +
+        "    <a href='javascript:void(0)' onclick='showSwimsuit2016()' class='listAvatarItem listAvatarItem-action list-group-item-info'>54. Swimsuit 2016</a>" +
+        "    <a href='javascript:void(0)' onclick='showNightmare()' class='listAvatarItem listAvatarItem-action list-group-item-info'>55. Nightmare</a>" +
+        "    <a href='javascript:void(0)' onclick='showYukata2016()' class='listAvatarItem listAvatarItem-action list-group-item-info'>56. Yukata 2016</a>" +
+        "    <a href='javascript:void(0)' onclick='showYukata()' class='listAvatarItem listAvatarItem-action list-group-item-info'>57. Yukata</a>" +
+        "    <a href='javascript:void(0)' onclick='showDemon()' class='listAvatarItem listAvatarItem-action list-group-item-info'>58. Demon</a>" +
+        "    <a href='javascript:void(0)' onclick='showWF2016()' class='listAvatarItem listAvatarItem-action list-group-item-info'>59. WF2016</a>" +
+        "    <a href='javascript:void(0)' onclick='showThug()' class='listAvatarItem listAvatarItem-action list-group-item-info'>60. Thug</a>" +
+        "    <a href='javascript:void(0)' onclick='showVampire()' class='listAvatarItem listAvatarItem-action list-group-item-info'>61. Vampire</a>" +
+        "    <a href='javascript:void(0)' onclick='showSamurai()' class='listAvatarItem listAvatarItem-action list-group-item-info'>62. Samurai</a>" +
+        "    <a href='javascript:void(0)' onclick='showBlackFang()' class='listAvatarItem listAvatarItem-action list-group-item-info'>63. BlackFang</a>" +
+        "    <a href='javascript:void(0)' onclick='showConvictAva()' class='listAvatarItem listAvatarItem-action list-group-item-info'>64. Convict</a>" +
+        "    <a href='javascript:void(0)' onclick='showNinjaH()' class='listAvatarItem listAvatarItem-action list-group-item-info'>65. Ninja-H</a>" +
+        "    <a href='javascript:void(0)' onclick='showFireMan()' class='listAvatarItem listAvatarItem-action list-group-item-info'>66. FireMan</a>" +
+        "    <a href='javascript:void(0)' onclick='showDiver()' class='listAvatarItem listAvatarItem-action list-group-item-info'>67. Diver</a>" +
+        "    <a href='javascript:void(0)' onclick='showRoninAva()' class='listAvatarItem listAvatarItem-action list-group-item-info'>68. Ronin</a>" +
+        "    <a href='javascript:void(0)' onclick='showHockey()' class='listAvatarItem listAvatarItem-action list-group-item-info'>69. Hockey</a>" +
+        "    <a href='javascript:void(0)' onclick='showBusinessSeeker()' class='listAvatarItem listAvatarItem-action list-group-item-info'>70. Business Seeker</a>" +
+        "    <a href='javascript:void(0)' onclick='showBWTTroop()' class='listAvatarItem listAvatarItem-action list-group-item-info'>71. BWT Troop</a>" +
+        "    <a href='javascript:void(0)' onclick='showGentleman()' class='listAvatarItem listAvatarItem-action list-group-item-info'>72. Gentleman</a>" +
+        "    <a href='javascript:void(0)' onclick='showCasino()' class='listAvatarItem listAvatarItem-action list-group-item-info'>73. Casino</a>" +
+        "    <a href='javascript:void(0)' onclick='showMillionaire()' class='listAvatarItem listAvatarItem-action list-group-item-info'>74. Millionaire</a>" +
+        "    <a href='javascript:void(0)' onclick='showAttackOnTitan()' class='listAvatarItem listAvatarItem-action list-group-item-info'>75. Attack On Titans</a>" +
         "  </div>" +
         "    </div>" +
         "    <div class='col-9'>" +
@@ -201,6 +245,7 @@ function showCMDR(){
         "</div>";
     $('#guideMsgIndex').text('CMDR Avatar!');
     $('#avaShowDetail').html(htmlRender);
+    topFunction();
 }
 function showNs(){
     let htmlRender = "<div class='row'>" +"<h4>Night Stalker Avatar</h4>"+"<br>"+
@@ -218,12 +263,4 @@ function showChilvary(){
     $('#guideMsgIndex').text('Chilvary Avatar!');
     topFunction();
     $('#avaShowDetail').html(htmlRender);
-}
-function showNinja(){
-    let htmlRender = "<div class='row'>" +"<h4>Ninja Avatar</h4>"+"<br>"+
-        "<div class='col'><img class='img img-thumbnail' src='img/avatar/ninja.jpg'></div>"+
-        "</div>";
-    $('#guideMsgIndex').text('Ninja Avatar!');
-    $('#avaShowDetail').html(htmlRender);
-    topFunction();
 }

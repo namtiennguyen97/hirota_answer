@@ -1,6 +1,6 @@
 function avatarDropAnswer(){
 let htmlAnswer = "<p class='titleMidtest'>Danh sách các loại avatar drop từ boss</p><br><table class='table table-hover table-bordered table-striped'>" +
-    "<tr><th scope='col' class='text-center'>Tên Boss <i class=\"fab fa-grunt\"></i></th><th scope='col' class='text-center'>Level <i class=\"fas fa-level-up-alt\"></i></th><th scope='col' class='text-center'>Vị trí<i class=\"fas fa-search-location\"></i></th><th scope='col' class='text-center'>Teleport tiêu tốn <i class=\"fas fa-comment-dollar\"></i></th><th scope='col' class='text-center'>Drop <i class=\"fas fa-box-open\"></i></th><th scope='col' class='text-center'>Avatar Drop <i class=\"fas fa-tshirt\"></i></th></tr>"+
+    "<tr><th scope='col' class='text-center'>Tên Boss <i class=\"fab fa-grunt\"></i></th><th scope='col' class='text-center'>Level <i class=\"fas fa-level-up-alt\"></i></th><th scope='col' class='text-center'>Vị trí <i class=\"fas fa-search-location\"></i></th><th scope='col' class='text-center'>Teleport tiêu tốn <i class=\"fas fa-comment-dollar\"></i></th><th scope='col' class='text-center'>Drop <i class=\"fas fa-box-open\"></i></th><th scope='col' class='text-center'>Avatar Drop <i class=\"fas fa-tshirt\"></i></th></tr>"+
     "<tr><td scope='row'>Oppressive Goblin Troll</td><td>Lv 10</td><td>Hang Cave of Bewilderness</td><td>1,000g</td><td>Trang bị và vũ khí Level 8</td><td>Mascot (Hóa trang gấu killer)</td></tr>"+
     "<tr><td scope='row'>Cross-border Heteropoda</td><td>Lv 18</td><td>Hang Cave of Howling Peak</td><td>3,000g</td><td>Trang bị và vũ khí Level 24</td><td>Diver (Bộ đồ lặn)</td></tr>"+
     "<tr><td scope='row'>Big Eater Heteropoda</td><td>Lv 23</td><td>Hang Spider Thread Cave</td><td>3,200g</td><td>Trang bị và vũ khí Level 21</td><td>Fireman (Lính cứu hỏa)</td></tr>"+
@@ -29,8 +29,11 @@ let htmlAnswer = "<p class='titleMidtest'>Danh sách các loại avatar drop t�
     "<tr><td scope='row'>Gloomy Mojaggy</td><td>Lv 73</td><td>Hang Pitch Black Cave</td><td>22,700g</td><td>Trang bị Level 68 và vũ khí Level 70</td><td>Vampire</td></tr>"+
     "<tr><td scope='row'>Joyful Meat Bolus</td><td>Lv 75</td><td>Garden of Joy</td><td>68,000g</td><td>Trang bị Level 68 và vũ khí Level 75</td><td>Ying Yang (Pháp sư)</td></tr>"+
     "<tr><td scope='row'>Specter Sakon, Specter Ukon</td><td>Lv 82</td><td>Hang Spellbinded Grave</td><td>17,000g</td><td>Trang bị Level 68 và vũ khí Level 70</td><td>Kabuki (Nhạc kịch JP), Rider Mask, Clown Mask</td></tr>"+
-    "<tr><td scope='row'>Poisonous MushFrog</td><td>Lv 82</td><td>Hang South Cave Layer 2</td><td>22,000g</td><td>Trang bị Level 75 và vũ khí Level 82</td><td>Clown (Chú hề)</td></tr>"+
+    "<tr><td scope='row'>Poisonous MushFrog</td><td>Lv 82</td><td>Hang South Cave Layer 2</td><td>30,000g</td><td>Trang bị Level 75 và vũ khí Level 82</td><td>Clown (Chú hề)</td></tr>"+
+    "<tr><td scope='row'>Dreamland Chimera</td><td>Lv 87</td><td>???</td><td>32,000g</td><td>Trang bị Level 75 và vũ khí Level 82</td><td>Kabuki (Nhạc kịch JP)</td></tr>"+
     "<tr><td scope='row'>Tormenting Garula (Vào bằng vé Small Coin)</td><td>Lv 88</td><td>Hang South Cave Layer ?</td><td>50,000g</td><td>Trang bị Level 75 và vũ khí Level 72</td><td>???</td></tr>"+
+    "<tr><td scope='row'>Timeless Demon Super Troop (Vào bằng bug)</td><td>Lv 97</td><td>Dark Mt Border Cave Layer 1</td><td>50,000g</td><td>Trang bị Level 75 và vũ khí Level 72</td><td>???</td></tr>"+
+
     // "<tr><td scope='row'>Ruined Cerberus</td><td>Lv 50</td><td>Hang Tunnel 2</td><td>9,400g</td><td>Trang bị Level 40 và vũ khí Level 37</td><td>Convict (Tù nhân)</td></tr>"+
     "<p class='titleMidtest text-danger'>Note: Điều kiện để có được box chứa avatar đó là phải là box đỏ có hiệu ứng bất kì trở lên. Những loại box kém hơn sẽ không có avatar. Chúc các bạn may mắn! </p>"+
     "<br>"+
