@@ -11,8 +11,8 @@ $('#midtestNinja').mouseenter(function () {
 $('#homeTip').mouseenter(function () {
     $('#guideMsgIndex').text('Chúng ta đã ở trang chủ!');
 });
-$('#mydropdownTipping').mouseenter(function () {
-    $('#guideMsgIndex').text('Danh sách các vấn đề mà có thể bạn cần! Bao gồm các thông tin hữu ích.');
+$('#mainQuestMenu').mouseenter(function () {
+    $('#guideMsgIndex').text('Danh sách tất cả các main quest.');
 });
 
 $('#chickTime').mouseenter(function () {

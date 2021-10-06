@@ -3,4 +3,8 @@ function soundMenu(){
     mainMenuSound.play();
     mainMenuSound.loop();
 }
-soundMenu();
+function soundMenuStop(){
+    let mainMenuSound = $('#mainMenuSound')[0];
+    mainMenuSound.pause();
+    mainMenuSound.currentTime = 0;
+}

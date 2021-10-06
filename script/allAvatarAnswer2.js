@@ -515,7 +515,7 @@ function showMillionaire(){
     topFunction();
 }
 function showAttackOnTitan(){
-    let htmlRender = "<div class='row'>" +"<h4>Villan Avatar</h4>"+"<br>"+
+    let htmlRender = "<div class='row'>" +"<h4>Attack On Titan Avatar</h4>"+"<br>"+
         "<div class='col-4'><img class='img img-thumbnail' src='img/avatar/eren.jpg'>Eren</div>"+
         "<div class='col-4'><img class='img img-thumbnail' src='img/avatar/erwin.jpg'>Erwin</div>"+
         "<div class='col-4'><img class='img img-thumbnail' src='img/avatar/levi.jpg'>Levi</div>"+
@@ -525,7 +525,7 @@ function showAttackOnTitan(){
         "<div class='col-4'><img class='img img-thumbnail' src='img/avatar/mikasa.jpg'>Mikasa</div>"+
         "<div class='col-4'><img class='img img-thumbnail' src='img/avatar/historia.jpg'>Historia</div>"+
         "</div>";
-    $('#guideMsgIndex').text('Villan Avatar!');
+    $('#guideMsgIndex').text('Attack On Titan Avatar!');
     $('#avaShowDetail').html(htmlRender);
     topFunction();
 }
