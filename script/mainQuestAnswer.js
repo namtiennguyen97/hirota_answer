@@ -678,27 +678,28 @@ function mainQuestAnswer(){
         "<tr class='table-secondary'>" +
         "<td >09</td>"+
         "<td>Help me. My right arm hurts</td>"+
-        "<td>Elbow</td>"+"<td>Oil Field Site</td>"+"<td>Ta lk to Morris.</td>"+"<td>Ordo Village</td>"+
+        "<td>Elbow</td>"+"<td>Oil Field Site</td>"+"<td>Defeat 12 of Bold Fungus<br>Report to Elbow</td>"+"<td>Cave of Gross Oil</td>"+
         "</tr>"+
         "<tr>" +
         "<td >10</td>"+
         "<td>Gramps you don't want to mess with...</td>"+
-        "<td>Morris</td>"+"<td>Ordo Village</td>"+"<td>Become Lv 7 or higher.</td>"+"<td>Ordo Village</td>"+
+        "<td>Elbow</td>"+"<td>Oil Field Site</td>"+"<td>Defeat 8 of Shy Araneus<br>Report to Elbow</td>"+"<td>Cave of Gross Oil</td>"+
         "</tr>"+
         "<tr class='table-secondary'>" +
         "<td >11</td>"+
         "<td>The type you don't want to go near	</td>"+
-        "<td>Morris</td>"+"<td>Ordo Village</td>"+"<td>Talk to Shade.</td>"+"<td>Ordo Village</td>"+
+        "<td>Elbow</td>"+"<td>Oil Field Site</td>"+"<td>Get 7 Pure Yellow Body Fluid (Growing Pains Oil Chick)<br>Give to Amelia</td>"+"<td>Oil Field Site</td>"+
         "</tr>"+
         "<tr>" +
-        "<td >12</td>"+
-        "<td>Important documents coming soon</td>"+
-        "<td>Shade</td>"+"<td>Ordo Village</td>"+"<td>Talk to Travis.</td>"+"<td>Old Wood Forest</td>"+
+        "<td rowspan='2'>12</td>"+
+        "<td rowspan='2'>Important documents coming soon</td>"+
+        "<td>Amelia</td>"+"<td rowspan='2'>Oil Field Site</td>"+"<td>Defeat 20 of Fearless Wolf<br>Report to Amelia</td>"+"<td rowspan='2'>Oil Field Site</td>"+
         "</tr>"+
+        "<tr><td>Amelia</td><td>Give to Gounod</td></tr>"+
         "<tr class='table-secondary'>" +
         "<td >13</td>"+
         "<td>First get that giant one!!</td>"+
-        "<td>Travis</td>"+"<td>Old Wood Forest</td>"+"<td>Defeat 1 Oppressive Goblin Troll.</td>"+"<td>Cave of Bewilderness</td>"+
+        "<td>Gounod</td>"+"<td>Oil Field Site</td>"+"<td>Defeat 1 of Gross Eater Heteropoda<br>Report to Gounod</td>"+"<td>Cave of Gross Oil</td>"+
         "</tr>"+
         "</table>"+
 
@@ -710,6 +711,100 @@ function mainQuestAnswer(){
         "<br>"+
         "<br>"+
         "<p  id='mainquest19'><b>1.9.Sewerage 3 - Kasuba Water Plant 3</b></p><br>" +
+        "<table class='table table-dark table-bordered  table-hover align-middle text-center'>" +
+        "<tr>"+
+        "<th scope='col'>STT <i class=\"fas fa-sort-amount-down\"></i></th>" +
+        "<th scope='col'>Tên Quest <i class=\"fas fa-scroll\"></i></th>" +
+        "<th scope='col'>NPC <i class=\"fas fa-user\"></i></th>" +
+        "<th scope='col'>Địa điểm nhận quest <i class=\"fas fa-map-marker-alt\"></i></th>" +
+        "<th scope='col'>Nội dung làm quest <i class=\"fas fa-torah\"></i></th>" +
+        "<th scope='col'>Vị trí trả Quest <i class=\"fas fa-map-marker\"></i></th></tr>" +
+        "<tr class='table-secondary'>" +
+        "<td scope='row' rowspan='3'>01</td>"+
+        "<td rowspan='3'>Deliver this sick order</td>"+
+        "<td>Gounod</td>"+"<td>Oil Field Site</td>"+"<td>Talk to Lawton</td>"+"<td>North Defense Line</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'><td>Lawton</td><td>North Defense Line</td><td>Talk to Capitan Benton</td><td>BWT - Military Area</td></tr>"+
+        "<tr class='table-secondary'><td>Capitan Benton</td><td>BWT - Military Area</td><td>Talk to Irma</td><td>BWT - Commercial Area</td></tr>"+
+        "<tr>" +
+        "<td rowspan='3'>02</td>"+
+        "<td rowspan='3'>She might be hiding close</td>"+
+        "<td>Guard</td>"+"<td>BWT - Commercial Area</td>"+"<td>Talk to Gemma</td>"+"<td rowspan='3'>Outer Wall District</td>"+
+        "</tr>"+
+        "<tr><td>Gemma</td><td rowspan='2'>Outer Wall District</td><td>Talk to Jessica</td></tr>"+
+        "<tr><td>Jessica</td><td>Find Irma</td></tr>"+
+        "<tr class='table-secondary'>" +
+        "<td scope='row' rowspan='3'>03</td>"+
+        "<td rowspan='3'>Troops seem to be getting busy</td>"+
+        "<td>Irma</td>"+"<td>Outer Wall District</td>"+"<td>Talk to Kirkland</td>"+"<td>BWT - Military Area</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'><td>Kirkland</td><td>BWT - Military Area</td><td>Talk to Maximilian</td><td>Large Wetland</td></tr>"+
+        "<tr class='table-secondary'><td>Maximilian</td><td>Large Wetland</td><td>Talk to Poitier</td><td>Sewerage 3</td></tr>"+
+        "<tr>" +
+        "<tr>" +
+        "<td >04</td>"+
+        "<td>You got the wrong target!</td>"+
+        "<td>Poiter</td>"+"<td>Sewerage 3</td>"+"<td>Defeat 18 of Untainted Undead Wolf<br>Report to Poitier.</td>"+"<td>Sewerage 3</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'>" +
+        "<td rowspan='2'>05</td>"+
+        "<td rowspan='2'>My men are getting in my way</td>"+
+        "<td >Poitier</td>"+"<td rowspan='2'>Sewerage 3</td>"+"<td>Talk to Egorova</td>"+"<td rowspan='2'>Sewerage 3</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'><td>Egorova</td><td>Defeat 20 of Unpopular Samurai Skeleton<br>Report to Egorova</td></tr>"+
+        "<tr>" +
+        "<td >06</td>"+
+        "<td rowspan='2'>He should be thirsty and starving</td>"+
+        "<td rowspan='2'>Egorova</td>"+"<td rowspan='2'>Sewerage 3</td>"+"<td>Defeat 15 of Delinquent Spirit<br>Report to Villemain</td>"+"<td rowspan='2'>Sewerage 3</td>"+
+        "</tr>"+
+        "<tr><td>Villemain</td><td>Defeat 15 of Delinquent Spirit<br>Report to Villemain</td></tr>"+
+        "<tr class='table-secondary'>" +
+        "<td >07</td>"+
+        "<td>Keep this a secret</td>"+
+        "<td>Villemain</td>"+"<td>Sewerage 3</td>"+"<td>Get 8 Festered Leather (Untainted Undead Wolf)<br>Get 5 Sticky Ectoplasm (Delinquent Spirit)<br>Give to Maximilian</td>"+"<td>Sewerage 3</td>"+
+        "</tr>"+
+        "<tr>" +
+        "<td>08</td>"+
+        "<td>It's really his job you know</td>"+
+        "<td>Maximilian</td>"+"<td>Large Wetland</td>"+"<td>Defeat 25 of Lonely Fake Cat<br>Report to Maximilian</td>"+"<td>Kasuba Water Plant 3</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'>" +
+        "<td rowspan='2'>09</td>"+
+        "<td rowspan='2'>Personal favor</td>"+
+        "<td>Maximilian</td>"+"<td>Large Wetland</td>"+"<td>Find a Corpse</td>"+"<td>Kasuba Water Plant 3</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'><td>**Grave** (Ngôi mộ)</td><td>Kasuba Water Plant 3</td><td>Get 1 Andre Romero's Diary 1/1<br>Give to Maximilian</td><td>Large Wetland</td></tr>"+
+        "<tr>" +
+        "<td rowspan='2'>10</td>"+
+        "<td rowspan='2'>I finally found it!</td>"+
+        "<td>Maximilian</td>"+"<td>Large Wetland</td>"+"<td>Talk to Poitier</td>"+"<td>Sewerage 3</td>"+
+        "</tr>"+
+        "<tr><td>Poitier</td><td>Sewerage 3</td><td>Defeat 1 of Loyal Shogun Skeleton<br>Report to Poitier</td><td>Sewerage 3</td></tr>"+
+        "<tr class='table-secondary'>" +
+        "<td rowspan='2'>11</td>"+
+        "<td rowspan='2'>You just finished your mission</td>"+
+        "<td>Poitier</td>"+"<td>Sewerage 3</td>"+"<td>Talk to Maximilian</td>"+"<td>Large Wetland</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'><td>Maximilian</td><td>Large Wetland</td><td>Defeat 25 of Show Off Demon Troop<br>Report to Maximilian</td><td>Kasuba Water Plant 3</td></tr>"+
+        "<tr>" +
+        "<td >12</td>"+
+        "<td>More help has come</td>"+
+        "<td>Maximilian</td>"+"<td>Large Wetland</td>"+"<td>Talk to Kirkland</td>"+"<td>Kasuba Water Plant 3</td>"+
+        "</tr>"+
+        "<tr class='table-secondary'>" +
+        "<td >13</td>"+
+        "<td>Gotta make up your mind!</td>"+
+        "<td>Kirkland</td>"+"<td>Kasuba Water Plant 3</td>"+"<td>Defeat 1 of Kasbah<br>Report to Kirkland</td>"+"<td>Kasuba Water Plant 3</td>"+
+        "</tr>"+
+        "</table>"+
+
+
+
+        "<br>"+
+        "<br>"+
+        "<br>"+
+        "<p class='titleMidtest' id='mainquestlv1to50'>Level 50- 70</p><br>" +
+        "<p  id='mainquest11'><b>2.1.North Fortress - War Quest</b></p><br>" +
         "<table class='table table-dark table-bordered  table-hover align-middle text-center'>" +
         "<tr>"+
         "<th scope='col'>STT <i class=\"fas fa-sort-amount-down\"></i></th>" +
@@ -800,6 +895,7 @@ function mainQuestAnswer(){
         "<td>Travis</td>"+"<td>Old Wood Forest</td>"+"<td>Talk to Morris.</td>"+"<td>Ordo Village</td>"+
         "</tr>"+
         "</table>"+
+
         "</div>";
     $('#information').html(htmlAnswer);
 }
