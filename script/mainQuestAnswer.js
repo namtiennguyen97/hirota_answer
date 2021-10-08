@@ -37,7 +37,6 @@ function scrollToListMainQuest(scrollCase){
 
 }
 
-
 function mainQuestAnswer(){
 
     let htmlAnswer = "<p class='titleMidtest'>Main quest là chuỗi nhiệm vụ chính xuyên suốt để mở các chức năng của game như Wall Walk, Water Walk, " +
