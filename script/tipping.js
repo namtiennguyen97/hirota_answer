@@ -9,7 +9,7 @@ $('#midtestNinja').mouseenter(function () {
     $('#guideMsgIndex').text('Hướng dẫn cách làm Mid-test chuyển nghề trong Izanagi! Bạn có thể bắt đầu thực hiện nhiệm vụ chuyển nghề này khi đạt được level 45.');
 });
 $('#homeTip').mouseenter(function () {
-    $('#guideMsgIndex').text('Chúng ta đã ở trang chủ!');
+    $('#guideMsgIndex').text('Trang chủ');
 });
 $('#mainQuestMenu').mouseenter(function () {
     $('#guideMsgIndex').text('Danh sách tất cả các main quest.');
@@ -25,4 +25,6 @@ $('#avatarBossDrop').mouseenter(function () {
 $('#showAllAvatar').mouseenter(function () {
     $('#guideMsgIndex').text('Xem tất cả các loại avatar có trong game!');
 });
-
+$('#mydropdownTipping').mouseenter(function () {
+    $('#guideMsgIndex').text('Danh mục nơi bạn tra cứu các hạng mục cần thiết!');
+});

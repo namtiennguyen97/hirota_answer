@@ -51,7 +51,6 @@
 <!--END OF PAGE LOADER-->
 
 <header>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <img class="navbar-brand" src="img/icon.jpg" style="width: 30px; height: 40px"> <a class="navbar-brand" href="index.html">Hirota Izanagi</a>
         <button class="navbar-toggler" type="button"
@@ -74,15 +73,15 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="mydropdownTipping" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Thông tin Game <i class="fas fa-book-open"></i>
+                        Danh mục <i class="fas fa-book-open"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="mydropdown">
                         <a class="dropdown-item" id="midtestNinja" onclick="midTestAnswer()" href="javascript:void(0)">Mid test ninja <i class="fas fa-diagnoses"></i></a>
-                        <a class="dropdown-item" id="chickTime" onclick="chickAnswer()" href="javascript:void(0)">Thời gian Chick <i class="fas fa-drumstick-bite"></i></a>
                         <a class="dropdown-item" onclick="mainQuestAnswer()" id="mainQuestMenu" href="javascript:void(0)">Main Quest <i class="fas fa-scroll"></i></a>
                         <a class="dropdown-item" id="showAllAvatar" onclick="allAvatarAnswer()" href="javascript:void(0)">Tất cả Avatar <i class="fas fa-vest-patches"></i></a>
                         <a class="dropdown-item" id="avatarBossDrop" onclick="avatarDropAnswer()" href="javascript:void(0)">Loại Boss drop Avatar <i class="fas fa-tshirt"></i></a>
-                        <a class="dropdown-item"  href="#">Chi tiết các Boss drop <i class="fab fa-grunt"></i></a>
+                        <a class="dropdown-item" id="chickTime" onclick="chickAnswer()" href="javascript:void(0)">Thời gian Chick <i class="fas fa-drumstick-bite"></i></a>
+<!--                        <a class="dropdown-item"  href="#">Chi tiết các Boss drop <i class="fab fa-grunt"></i></a>-->
                     </div>
                 </li>
                 <li class="nav-item">
@@ -108,12 +107,9 @@
         <div class="glitch__img"></div>
         <div class="glitch__img"></div>
     </div>
-    <span id="guideMsgIndex">Chào mừng bạn đã đến với chuyên mục hỏi đáp về izanagi, bạn có thể chọn nhanh các hạng mục cần tìm hiểu, <br> hoặc viết câu hỏi để có thể truy cập nhanh các câu hỏi nhé! Xin hỏi quý danh ninja của bạn trong game?<br>
-        <input class="form-control border-success" id="username" type="text" placeholder="Tên Nhân Vật Ingame của bạn?"><br>
-        <button class="btn btn-info form-control" id="confirmUsername" onclick="queryUsername()">Tôi nè!</button>
+    <span id="guideMsgIndex">...
     </span>
 </div>
-
 <!--END OF SHOW GUIDE-->
 
 <!--SHOW INFORMATION HERE-->
@@ -129,6 +125,12 @@
 </div>
 
 <!--END OF SHOW INFORMATION HERE-->
+<div id="sssss">
+    <a href="javascript:" id="dataMenuLogin" onclick="login()" class="dataMenuLogin"><i id="iconLogin" class="fas fa-sign-in-alt"></i></a>
+</div>
+<div id="ssss">
+    <a href="javascript:" id="dataMenuGuide" class="dataMenuGuide"><i class="fas fa-user-cog"></i></a>
+</div>
 <div id="sss">
     <a href="javascript:" id="dataMenuSound" class="dataMenuSound"><i class="fas fa-volume-up"></i></a>
 </div>
@@ -151,5 +153,42 @@
             }
         })
 </script>
+<script>
+
+        if (!localStorage.getItem('username')){
+            $('#guideMsgIndex').html("Chào mừng bạn đã đến với chuyên mục hỏi đáp về izanagi, bạn có thể chọn nhanh các hạng mục cần tìm hiểu, <br> hoặc viết câu hỏi để có thể truy cập nhanh các câu hỏi nhé! <br> <b>Xin hỏi quý danh ninja của bạn trong game?</b><br>" +
+                "        <input class=\"form-control border-success\" id=\"username\" type=\"text\" placeholder=\"Tên Nhân Vật Ingame của bạn?\"><br>\n" +
+                "        <button class=\"btn btn-info form-control\" id=\"confirmUsername\" onclick=\"queryUsername()\">Tôi nè!</button>");
+        }
+        else {
+            let username = localStorage.getItem('username');
+            let randGuide = Math.floor(Math.random() * 4);
+            let welcome1 = "Oho chào mừng " +username+ " quay trở lại, chúc bạn một ngày tốt lành, và đặc biệt gặp may mắn trong game hehehe!";
+            let welcome2 = "Oh bạn quay lại à "+ username+ ", hẳn bạn cần gì đó nhỉ hehe!";
+            let welcome3 = "Đôi lúc hãy thử sáng tạo và làm mọi thứ bạn chưa từng làm trong Izanagi xem? Nó sẽ rất thú vị đấy "+ username+" hehehe!";
+            let welcome4 = "Chào chủ nhân "+ username + " hehehe, tuy nhiên nếu thấy tôi vướng, có mục option góc phải đó nhé! Và tôi cũng có thể được bật lại nếu muốn!";
+            let guideTip = [welcome1,welcome2,welcome3,welcome4];
+            $('#guideMsgIndex').text(guideTip[randGuide]);
+
+        }
+        function login(){
+            if (!localStorage.getItem('username')){
+                $('#guideMsgIndex').html("<b>Xin hỏi quý danh ninja của bạn trong game?</b><br>" +
+                    "        <input class=\"form-control border-success\" id=\"username\" type=\"text\" placeholder=\"Tên Nhân Vật Ingame của bạn?\"><br>\n" +
+                    "        <button class=\"btn btn-info form-control\" id=\"confirmUsername\" onclick=\"queryUsername()\">Tôi nè!</button>");
+            } else {
+                $('#guideMsgIndex').html("Bạn đã nhập quý danh rồi mà?! Hay là bạn muốn đổi quý danh?<br><button class='btn btn-info' onclick='relogin()'>Đúng vậy, tôi muốn đăng xuất thay đổi!</button>");
+            }
+        }
+        function relogin(){
+            localStorage.removeItem('username');
+            $('#guideMsgIndex').html("<b>Xin hỏi quý danh ninja của bạn trong game?</b><br>" +
+                "        <input class=\"form-control border-success\" id=\"username\" type=\"text\" placeholder=\"Tên Nhân Vật Ingame của bạn?\"><br>\n" +
+                "        <button class=\"btn btn-info form-control\" id=\"confirmUsername\" onclick=\"queryUsername()\">Tôi nè!</button>");
+
+        }
+
+</script>
+
 </body>
 </html>

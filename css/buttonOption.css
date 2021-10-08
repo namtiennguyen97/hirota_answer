@@ -26,6 +26,55 @@
 }
 
 
+.dataMenuLogin{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 415px;
+    right: 28px;
+    height:60px;
+    width: 60px;
+    transform:rotate(-45deg);
+}
+.dataMenuLogin i {
+    transform:rotate(45deg) translate(0,0);
+    text-align:center;
+}
+.dataMenuLogin:hover{
+    color: white;
+    background-color: #bbbbbb;
+}
+
+
+
+.dataMenuGuide{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 315px;
+    right: 28px;
+    height:60px;
+    width: 60px;
+    transform:rotate(-45deg);
+}
+.dataMenuGuide i {
+    transform:rotate(45deg) translate(0,0);
+    text-align:center;
+}
+.dataMenuGuide:hover{
+    color: white;
+    background-color: #bbbbbb;
+}
+
+
 .dataMenuSound{
     background-color: #555;
     color: white;

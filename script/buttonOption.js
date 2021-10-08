@@ -4,11 +4,15 @@ let deleteSound = $('#deleteSound')[0];
 //sound
 $('#dataMenuSound').hide();
 $('#dataMenuHome').hide();
+$('#dataMenuGuide').hide();
+$('#dataMenuLogin').hide();
 
 $('#ss').on('click','#dataMenu',function () {
     $('#dataMenuHome').show();
     $('#dataMenuSound').show();
     $('#dataMenuSoundUp').show();
+    $('#dataMenuGuide').show();
+    $('#dataMenuLogin').show();
     $('#dataMenu').replaceWith("<a href='javascript:' id='dataMenuUp' class='menuDataSS'><i class='fas fa-angle-double-down '></i></a>");
 });
 
@@ -18,6 +22,8 @@ $('#ss').on('click','#dataMenuUp', function () {
     $('#dataMenuHome').hide();
     $('#dataMenuSound').hide();
     $('#dataMenuSoundUp').hide();
+    $('#dataMenuGuide').hide();
+    $('#dataMenuLogin').hide();
 });
 
 
@@ -44,6 +50,18 @@ $('#sss').on('click','#dataMenuSoundUp', function () {
     $('#dataMenuSoundUp').replaceWith("<a href='javascript:' id='dataMenuSound' class='dataMenuSound'><i class='fas fa-volume-up'></i></a>");
     soundMenu();
 });
+
+$('#dataMenuGuide').click(function (){
+    $('.fa-user-cog').toggleClass('fa-user-alt-slash');
+    $('#showGuide').toggle();
+});
+
+// $(document).on('click','#dataMenuGuide','.fa-user-alt-slash', function (){
+//     $('#showGuide').hide();
+// });
+// $(document).on('click','#showGuide','.fa-user-cog', function (){
+//     $('#showGuide').show();
+// });
 
 function topFunction() {
     document.body.scrollTop = 0;
