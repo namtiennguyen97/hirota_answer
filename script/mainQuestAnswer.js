@@ -2293,6 +2293,7 @@ function mainQuestAnswer(){
         "<td>Edgar</td>"+"<td>Yamato Village</td>"+"<td><i class=\"fas fa-arrow-right\"></i> Report to Irma</td>"+"<td>Motel Underground</td>"+
         "</tr>"+
         "</table>"+
+
         "</div>";
     $('#information').html(htmlAnswer);
 }
