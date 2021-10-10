@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/guide.css">
     <link rel="stylesheet" href="css/buttonOption.css">
-    <link rel="icon" href="img/2b_Best_Vector_Croped.png">
+    <link rel="icon" href="img/hirotaedit.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -99,7 +99,7 @@
 
 
 <!--SHOW GUIDE HERE-->
-<div id="showGuide">
+<div id="showGuide" >
     <div class="glitch glitch--style-1 glitchGuide">
         <div class="glitch__img"></div>
         <div class="glitch__img"></div>
@@ -119,7 +119,15 @@
 
         </div>
         <div class="col-10" id="information">
+            <div class="row">
+                <div class="col-sm-5">
+<!--                    <p class="font-monospace fs-5"><i class="fas fa-caret-right"></i> Chào mừng đến với IzanagiVN!. Chúc bạn một ngày thật tốt lành và đạt được nhiều may mắn trong game! <i class="fas fa-gamepad"></i></p>-->
+                </div>
+                <div class="col-sm-5">
+<!--                    <p class="font-monospace fs-5"><i class="fas fa-caret-right"></i> Chào mừng đến với IzanagiVN!. Chúc bạn một ngày thật tốt lành và đạt được nhiều may mắn trong game! <i class="fas fa-gamepad"></i></p>-->
 
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -156,7 +164,7 @@
 <script>
 
         if (!localStorage.getItem('username')){
-            $('#guideMsgIndex').html("Chào mừng bạn đã đến với chuyên mục hỏi đáp về izanagi, bạn có thể chọn nhanh các hạng mục cần tìm hiểu, <br> hoặc viết câu hỏi để có thể truy cập nhanh các câu hỏi nhé! <br> <b>Xin hỏi quý danh ninja của bạn trong game?</b><br>" +
+            $('#guideMsgIndex').html("Chào mừng bạn đã đến với chuyên mục hỏi đáp về izanagi.<br> <b>Xin hỏi quý danh ninja của bạn trong game?</b><br>" +
                 "        <input class=\"form-control border-success\" id=\"username\" type=\"text\" placeholder=\"Tên Nhân Vật Ingame của bạn?\"><br>\n" +
                 "        <button class=\"btn btn-info form-control\" id=\"confirmUsername\" onclick=\"queryUsername()\">Tôi nè!</button>");
         }

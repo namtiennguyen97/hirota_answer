@@ -83,7 +83,7 @@
     opacity: 0.8;
     position: fixed;
     top: 50%;
-    bottom: 10px;
+    bottom: auto;
     left: 6px;
     height:70px;
     width: 5px;
@@ -93,7 +93,7 @@
     /*left: calc(-1 * var(--gap-horizontal));*/
     /*width: calc(100% + var(--gap-horizontal) * 2);*/
     /*height: calc(100% + var(--gap-vertical) * 2);*/
-    background: url(../img/2b_Best_Vector_Croped.png) no-repeat center;
+    background: url(../img/hirotaedit.png) no-repeat center;
     background-color: var(--blend-color-1);
     transform: translate3d(0,0,0);
     /*background-position: center;*/
