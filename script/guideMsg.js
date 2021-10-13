@@ -1,5 +1,5 @@
 
-let guideTip = ['UWU~','Có chuyện gì vậy?','Có vấn đề gì ngoài việc click vào tôi không ạ?', 'o~0',
+let guideTip = ['UWU~','Có chuyện gì vậy?','Có vấn đề gì ngoài việc click vào tôi không ạ?', 'Nhạc nền là Death and Sorrow của Izanagi. Bạn có nhận ra đây chính là nhạc nền ở map Blacksmith Village không?',
 'Hôm nay là ngày...' + date.getDate() + "/" + (date.getMonth() + 1) +  "/" + date.getFullYear(), 'Nếu có vấn đề gì, hãy điền vào ô câu hỏi.'];
 
 

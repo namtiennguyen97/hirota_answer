@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="answer.js"></script>
+    <!--    add cdn bootstrap v5-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--    end of cdn boostrap v5-->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -27,6 +30,8 @@
     <script src="script/allAvatarAnswer2.js"></script>
     <script src="script/aboutUserPersonal.js"></script>
     <script src="script/mainQuestAnswer.js"></script>
+    <script src="script/etcAnswer.js"></script>
+    <script src="script/ostList.js"></script>
 
 </head>
 <body>
@@ -44,6 +49,7 @@
         $(".loader").fadeOut();
         $("#preloder").delay(400).fadeOut("slow");
     });
+    soundMenu()
 </script>
 <div id="preloder">
     <div class="loader"></div>
@@ -80,8 +86,9 @@
                         <a class="dropdown-item" onclick="mainQuestAnswer()" id="mainQuestMenu" href="javascript:void(0)">Main Quest <i class="fas fa-scroll"></i></a>
                         <a class="dropdown-item" id="showAllAvatar" onclick="allAvatarAnswer()" href="javascript:void(0)">Tất cả Avatar <i class="fas fa-vest-patches"></i></a>
                         <a class="dropdown-item" id="avatarBossDrop" onclick="avatarDropAnswer()" href="javascript:void(0)">Loại Boss drop Avatar <i class="fas fa-tshirt"></i></a>
+                        <a class="dropdown-item"  onclick="ostList()" href="javascript:void(0)">Danh sách nhạc Izanagi <i class="fas fa-headphones-alt"></i></a>
                         <a class="dropdown-item" id="chickTime" onclick="chickAnswer()" href="javascript:void(0)">Thời gian Chick <i class="fas fa-drumstick-bite"></i></a>
-<!--                        <a class="dropdown-item"  href="#">Chi tiết các Boss drop <i class="fab fa-grunt"></i></a>-->
+                        <a class="dropdown-item" onclick="etcAnswer()"  href="javascript:void(0)">Các câu hỏi vắn <i class="far fa-question-circle"></i></a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -99,21 +106,21 @@
 
 
 <!--SHOW GUIDE HERE-->
-<div id="showGuide" >
-    <div class="glitch glitch--style-1 glitchGuide">
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-    </div>
-    <span id="guideMsgIndex">...
-    </span>
-</div>
+<!--<div id="showGuide" >-->
+<!--    <div class="glitch glitch&#45;&#45;style-1 glitchGuide">-->
+<!--        <div class="glitch__img"></div>-->
+<!--        <div class="glitch__img"></div>-->
+<!--        <div class="glitch__img"></div>-->
+<!--        <div class="glitch__img"></div>-->
+<!--        <div class="glitch__img"></div>-->
+<!--    </div>-->
+<!--    <span id="guideMsgIndex">...-->
+<!--    </span>-->
+<!--</div>-->
 <!--END OF SHOW GUIDE-->
 
 <!--SHOW INFORMATION HERE-->
-<div class="container">
+<div class="container" id="mainRender">
     <div class="row">
         <div class="col-2">
 
@@ -128,6 +135,11 @@
 
                 </div>
             </div>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-10" id="information2">
+
         </div>
     </div>
 </div>
@@ -146,6 +158,125 @@
 <div id="ss">
     <a href="javascript:" id="dataMenu" class="menuDataSS"><i class="fas fa-angle-double-up "></i></a>
 </div>
+
+<!--Modal Zone-->
+<!-- Modal -->
+<div class="modal fade" id="modalAssasin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " >Assasin/ Second class <img class="" src="img/classes/assasin.jpg" style="width: 10%; height: 10%"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/classes/assasin.jpg"  style="width: 100%; height: auto">
+                    </div>
+                    <div class="col-12">
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Đã hiểu</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalMage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " >Mage/ Second class <img class="" src="img/classes/mage.jpg" style="width: 10%; height: 10%"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/classes/mage.jpg"  style="width: 100%; height: auto">
+                    </div>
+                    <div class="col-12">
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Đã hiểu</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalCleric" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " >Cleric/ Second class <img class="" src="img/classes/cleric.jpg" style="width: 10%; height: 10%"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/classes/cleric.jpg"  style="width: 100%; height: auto">
+                    </div>
+                    <div class="col-12">
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Đã hiểu</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalWarrior" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title " id="staticBackdropLabel">Warrior/ Second class <img class="" src="img/classes/warrior.jpg" style="width: 10%; height: 10%"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/classes/warrior.jpg"  style="width: 100%; height: auto">
+                    </div>
+                    <div class="col-12">
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+
+                        This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Đã hiểu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End of Modal zone-->
 
 <script src="script/guideMsg.js"></script>
 <script src="script/tipping.js"></script>
