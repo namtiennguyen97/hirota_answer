@@ -21,4 +21,5 @@ function ostList(){
         " sử dụng trong game nhằm thỏa mãn nhu cầu tìm tòi, giải trí sâu về Izanagi Online.";
     $('#guideMsgIndex').html("...");
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }

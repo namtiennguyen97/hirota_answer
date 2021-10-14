@@ -40,4 +40,5 @@ let htmlAnswer = "<p class='titleMidtest'>Danh sách các loại avatar drop t�
     "</table>";
     $('#guideMsgIndex').text('...');
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }

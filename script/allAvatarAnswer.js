@@ -95,6 +95,7 @@ function allAvatarAnswer(){
         "</div>";
     $('#guideMsgIndex').text('Hãy lựa chọn danh sách!');
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }
 
 function showAvaReaper(){

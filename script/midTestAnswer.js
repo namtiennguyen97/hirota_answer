@@ -101,4 +101,5 @@ function midTestAnswer(){
         "Cách để có được huy chương bạc từ mỗi con boss đó là bạn phải giết đủ 100 lần với mỗi con, sau đó mở giao diện sách Achivement Boss nhận huy chương (400 lần đánh boss tất cả, lưu ý đánh 4 con boss yếu nhất game để có thể hoàn thành nhanh). " +
         "Chúc các bạn thành công và trở thành những Ninja hùng mạnh của VN.</span>";
     $('#information').html(htmlMidtest);
+    $('#information2').html('<div></div>');
 }

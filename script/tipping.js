@@ -6,7 +6,7 @@ $('#classIntroduction').mouseenter(function () {
     $('#guideMsgIndex').text('Giới thiệu cơ bản về các class trong game!');
 });
 $('#midtestNinja').mouseenter(function () {
-    $('#guideMsgIndex').text('Hướng dẫn cách làm Mid-test chuyển nghề trong Izanagi! Bạn có thể bắt đầu thực hiện nhiệm vụ chuyển nghề này khi đạt được level 45.');
+    $('#guideMsgIndex').html('Hướng dẫn cách làm Mid-test chuyển nghề trong Izanagi!<br> Bạn có thể bắt đầu thực hiện nhiệm vụ chuyển nghề này khi đạt được level 45.');
 });
 $('#homeTip').mouseenter(function () {
     $('#guideMsgIndex').text('Trang chủ');
@@ -27,4 +27,7 @@ $('#showAllAvatar').mouseenter(function () {
 });
 $('#mydropdownTipping').mouseenter(function () {
     $('#guideMsgIndex').text('Danh mục nơi bạn tra cứu các hạng mục cần thiết!');
+});
+$('#etcAnswer').mouseenter(function () {
+    $('#guideMsgIndex').text('Các câu hỏi vắn');
 });

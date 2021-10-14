@@ -59,11 +59,10 @@ function classesAnswer(){
         "</div>";
     $('#guideMsgIndex').text('...');
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }
 
-function classDetail(){
-    $('#guideMsgIndex').text('Comming Soon...');
-}
+
 function showModalAssasin(){
     $('#modalAssasin').modal('show');
 }

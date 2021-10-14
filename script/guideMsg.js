@@ -21,4 +21,5 @@ function showTutorialWebsite(){
         "    <a href='#' class='listAvatarItem listAvatarItem-action list-group-item-dark'><i class=\"fas fa-head-side-cough-slash\"></i> Điều cuối cùng: Hãy cùng nhau tuân thủ các nguyên tắc chống dịch, vì một tương lai không ai phải ở nhà cày game trong cảnh nghèo đói và thấp thỏm nữa ^^.</a>" +
         "</div>";
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }

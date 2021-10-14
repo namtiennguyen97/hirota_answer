@@ -2296,4 +2296,5 @@ function mainQuestAnswer(){
 
         "</div>";
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }

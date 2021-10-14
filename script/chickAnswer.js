@@ -7,4 +7,5 @@ function chickAnswer(){
         "</table>";
     $('#guideMsgIndex').text('...');
     $('#information').html(htmlAnswer);
+    $('#information2').html('<div></div>');
 }
