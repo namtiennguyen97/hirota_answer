@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
     <script src="answer.js"></script>
     <!--    add cdn bootstrap v5-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -32,6 +35,8 @@
     <script src="script/mainQuestAnswer.js"></script>
     <script src="script/etcAnswer.js"></script>
     <script src="script/ostList.js"></script>
+    <link rel="stylesheet" href="css/customMain.css">
+    <script src="script/weather.js"></script>
 
 </head>
 <body>
@@ -105,6 +110,8 @@
 <!--<p>Time in system: <span id="countingTime"></span></p>-->
 
 
+
+
 <!--SHOW GUIDE HERE-->
 <div id="showGuide" >
     <div class="glitch glitch--style-1 glitchGuide">
@@ -126,14 +133,44 @@
 
         </div>
         <div class="col-10" id="information">
-            <div class="row">
-                <div class="col-sm-5">
-<!--                    <p class="font-monospace fs-5"><i class="fas fa-caret-right"></i> Chào mừng đến với IzanagiVN!. Chúc bạn một ngày thật tốt lành và đạt được nhiều may mắn trong game! <i class="fas fa-gamepad"></i></p>-->
-                </div>
-                <div class="col-sm-5">
-<!--                    <p class="font-monospace fs-5"><i class="fas fa-caret-right"></i> Chào mừng đến với IzanagiVN!. Chúc bạn một ngày thật tốt lành và đạt được nhiều may mắn trong game! <i class="fas fa-gamepad"></i></p>-->
 
-                </div>
+            <p class="titleMidtest text-center"></p>
+
+            <div class="makePattern" style="height:20px;font-size:25px; color: white">
+                <p class="titleMidtest text-center">
+                    TP Hà Nội: <span id="weatherHN"></span>°C <img id="iconWeatherHN" src=""> |
+                    TP Hồ Chí Minh <span id="weatherHCM"></span>°C <img id="iconWeatherHCM" src="">
+                </p>
+            </div>
+
+            <div class="mainScreen"></div>
+
+            <div class="makePattern" style="height:370px;font-size:25px; color: white">
+                <p class="titleMidtest text-center">Chào mừng bạn đã đến với tửu quán Hirota! <i class="fas fa-wine-bottle"></i><br>
+                    Nơi những kiến thức cơ bản dành cho newbie với thông tin được chắt lọc!<br>
+                </p>
+                <br>
+                <img src="img/screen/katana.png" style="height: 400px; width: 200px">
+            </div>
+
+            <div class="mainScreen2"></div>
+
+
+            <div class="mainScreen3"></div>
+            <div class="makePattern" style="height:400px;font-size:25px; color: white">
+                <p class="titleMidtest text-center"><i class="fab fa-pagelines"></i> Đừng bao giờ ngừng sáng tạo lối chơi và cách build của mình, điều đó sẽ gia tăng trải nghiệm của bạn!<br>
+                    <i class="fab fa-pagelines"></i> Chúc bạn một ngày tốt lành và gặp nhiều may mắn trong công cuộc chinh phục Izanagi Online!</p>
+                <br>
+                <img src="img/screen/giphy.gif" style="height: 350px; width: 250px">
+            </div>
+
+
+            <div class="mainScreen4"></div>
+            <div class="makePattern" style="height:50px;font-size:25px; color: white">
+                <p class="titleMidtest text-center">Tác giả: Hirota <i class="fas fa-user-ninja"></i>
+                </p>
+            </div>
+
             </div>
         </div>
         <div class="col-2">

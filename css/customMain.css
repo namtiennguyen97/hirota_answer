@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+}
+
+.mainScreen {
+    /* The image used */
+    background-image: url('../img/maintheme.jpg');
+
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainScreen2 {
+    /* The image used */
+    background-image: url('../img/screen/max-screen.jpg');
+
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainScreen3 {
+    /* The image used */
+    background-image: url('../img/maintheme.jpg');
+
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainScreen4 {
+    /* The image used */
+    background-image: url('../img/mainPage.jpg');
+
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .mainScreen {
+        background-attachment: scroll;
+    }
+
+    .mainScreen3 {
+        background-attachment: scroll;
+    }
+
+}
+
+.makePattern{
+    background-image: url("../img/screen/pattern.png");
+    background-repeat: repeat;
+    padding: 72px 0;
+
+}
